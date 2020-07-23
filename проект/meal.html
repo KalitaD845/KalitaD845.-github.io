@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+   
+        <div class="container">
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                </div> 
+                 <div class="french">
+                 <div class="soupe">
+                  <p>Суп</p>
+                 </div>
+                 <div class="meet">
+                  <p>Лягушки</p>
+                 </div>
+
+
+                 </div>
+                <div class="bg_img">
+                    <img src="img/fone.png" alt="">
+                </div>
+           
+        </div>
+        <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const myParam = urlParams.get('cusine');
+    </script>
+</body>
+</html>
+
+
+
+<template id="ingredient">
+        <div class="parent">
+          <div class="name"></div>
+          <div class="weight"></div>
+        </div>
+      </template>
+      
+      <template id="meal">
+        <div>
+          <div class="name"></div>
+          <img src="">
+          <div class="ingredients"></div>
+        </div>
+      </template>
+      
+      <script type="text/javascript">
+        let meal = {
+         name: 'Блинчики',
+         imagePath: './images/pancake.jpg',
+         ingredients: [
+          {
+            name: 'Мука',
+            weight: '200 гр'
+          },
+          {
+            name: 'Молоко',
+            weight: '500 мл'
+        },
+    {
+      name: 'Молоко',
+      weight: '500 мл'
+    }
+   ] 
+  }
+
+  let mealNode = document.querySelector('#meal')
+  mealNode.querySelector('.name').textContent = meal.name
+  let ingr = mealNode.querySelector('.ingredients')
+  ingrNode.querySelector('img').setProperty('src', meal.imagePath)
+  for (let ingredient of meal.ingredients) {
+    let ingrNode = document.querySelector('#ingredient')
+    ingrNode.querySelector('.name').textContent = ingredient.name
+    ingrNode.querySelector('.we
+    ingrNode.querySelector('.weight').textContent = ingredient.weight
+  }
+
+</script>
+
+let meals {
+    pancake: {
+       name: 'Блинчики',
+       imagePath: './images/pancake.jpg',
+       ingredients: [
+        {
+          name: 'Мука',
+          weight: '200 гр'
+        },
+        {
+          name: 'Молоко',
+          weight: '500 мл'
+        }
+       ] 
+      }
+    soup: {
+
+    }
+  }
+  let meal = meals[UrlParameter.get('meal')]      

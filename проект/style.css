@@ -1,0 +1,107 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+.container{
+    width: 414px;
+    margin: auto;
+}
+.logo img{
+    width: 188px;
+    height: 97px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0 0 0;
+}
+body{
+    background-color: #E7FFE1;
+}
+.bg_img img{
+    height: 432px;
+    width: 400px;
+    left: 0px;
+}
+.choose{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.desired_ingredients input, .exclude_ingredients input,.type_of_dish select, .kitchen select{
+    width: 364px;
+    height:40px;
+    background: #E7FFE1;
+    box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.46), 5px 5px 5px rgba(121, 121, 121, 0.25);
+    border-radius: 20px;
+}
+.choose p{
+    padding: 51px 0 7px 15px;
+    
+}
+.choose a{
+    width: 243px;
+    height: 40px;
+    margin: 36px 0 0 0;
+    padding-top:20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16pt;
+    color: black;
+    background: #9AE76B;
+box-shadow: -5px -5px 5px rgba(255, 255, 255, 0.46), 5px 5px 5px rgba(121, 121, 121, 0.25);
+border-radius: 20px;
+}
+
+
+
+#pancake_one{
+    background-image: url(img/pancake_one.png);
+    width: 364px;
+    background-size: cover;
+    height: 126px;
+    margin: auto;
+    
+}
+#pancake_one p,#pancake_one a{
+    background: #FFFFFF ;  
+    display: inline-block;
+     margin: 19px 0 0 16px;
+    color: black;   
+}
+.pancake_two{
+    background-image: url(img/pancake_two.png);
+    width: 364px;
+    background-size: cover;
+    height: 126px;
+    margin: auto;
+    
+}
+.pancake_two p{
+    background: #FFFFFF ;  
+    display: inline-block;
+     margin: 19px 0 0 16px;
+    color: black;   
+}
+.pancake_three{
+    background-image: url(img/pancake_three.png);
+    width: 364px;
+    background-size: cover;
+    height: 126px;
+    margin: auto;
+    
+}
+.pancake_three p{
+    background: #FFFFFF ;  
+    display: inline-block;
+     margin: 19px 0 0 16px;
+    color: black;   
+}
+.got{
+    width: 359px;
+    height: 126px;
+}
+.resept{
+    width: 359px;
+    margin: auto;
+}
